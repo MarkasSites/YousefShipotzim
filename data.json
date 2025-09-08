@@ -1,0 +1,132 @@
+{
+  "site": {
+    "title": "יוסף שיפוצים - עבודות בחיפה, הקריות ואזור הצפון",
+    "description": "יוסף שיפוצים — שיפוצים כלליים, אינסטלציה ואיטום, ועבודות גמר. צוות מקצועי ואמין, שירות מהיר והוגן בכל אזור הצפון.",
+    "phone": "052-3987393",
+    "phoneInternational": "+972523987393",
+    "secondaryPhone": "054-6588102",
+    "secondaryPhoneInternational": "+972546588102",
+    "companyName": "יוסף שיפוצים",
+    "logo": "logo3.png",
+    "cover": "header.mp4",
+    "favicon": "logo3.png",
+    "analytics": {
+      "enabled": true,
+      "googleAnalyticsId": "G-PBP3G0KNMS"
+    },
+    "meta": [
+      {
+        "name": "google-site-verification",
+        "content": "2VWf2H4eE2wIq6AK-6FFmOwPiqMEhGMvdeBjE1h_okM"
+      },
+      {
+        "name": "msvalidate.01",
+        "content": "72FC5FE023D698C42A776F361F7BFDEF"
+      }
+    ]
+  },
+  "navigation": [
+    { "text": "בית", "href": "#home", "active": true },
+    { "text": "שירותים", "href": "#services", "active": false },
+    { "text": "צור קשר", "href": "#contact", "active": false }
+  ],
+  "hero": {
+    "title": "יוסף שיפוצים",
+    "subtitle": "שיפוצים, אינסטלציה ואיטום, עבודות גמר — מקצוענים ואמינים בחיפה, קריות והסביבה",
+    "backgroundImage": "",
+    "mobileImage": "header.jpeg",
+    "videoSource": "header.mp4",
+    "poster": "header.jpeg"
+  },
+  "services": {
+    "title": "השירותים שלנו",
+    "items": [
+      {
+        "icon": "🏠",
+        "title": "שיפוצים",
+        "description": "שיפוצים כלליים לדירה ולבית: קונספט, תכנון וביצוע ברמת גמר גבוהה"
+      },
+      {
+        "icon": "🚿",
+        "title": "אינסטלציה ואיטום",
+        "description": "פתרונות אינסטלציה מתקדמים, איתור נזילות ואיטום מקצועי לקירות וגגות"
+      },
+      {
+        "icon": "🧱",
+        "title": "עבודות גמר",
+        "description": "ריצוף, צבע, גבס וחשמל — גימור מוקפד שמעלה את ערך הנכס"
+      }
+    ]
+  },
+  "serviceAreas": {
+    "title": "אזורי השירות שלנו",
+    "items": [
+      {
+        "icon": "🏙️",
+        "title": "חיפה והקריות",
+        "description": "עבודות שיפוץ וגמר בחיפה והקריות עם צוות מקומי אמין ומקצועי"
+      },
+      {
+        "icon": "🌊",
+        "title": "עכו",
+        "description": "שיפוצים, איטום ואינסטלציה בכל רחבי עכו והסביבה"
+      },
+      {
+        "icon": "🏘️",
+        "title": "נשר",
+        "description": "פתרונות שיפוץ מלאים בנשר — מתכנון ועד מסירה"
+      },
+      {
+        "icon": "🏖️",
+        "title": "חוף הכרמל",
+        "description": "ביצוע עבודות גמר ושדרוג נכסים בחוף הכרמל"
+      },
+      {
+        "icon": "🏞️",
+        "title": "טירת כרמל",
+        "description": "שיפוצים איכותיים בטירת כרמל עם ליווי אישי"
+      },
+      {
+        "icon": "🏗️",
+        "title": "חדרה",
+        "description": "פרויקטי שיפוץ וגמר בחדרה — מקצוענות ואמינות ללא פשרות"
+      }
+    ]
+  },
+  "content": [
+    {
+      "type": "normal",
+      "text": "ברוכים הבאים ל\"יוסף שיפוצים\" — קבלן שיפוצים אמין ומקצועי בצפון. אנו מבצעים שיפוצים מלאים, אינסטלציה ואיטום, ועבודות גמר ברמה גבוהה בחיפה, קריות, נשר, טירת כרמל, חוף הכרמל, עכו וחדרה.",
+      "rtl": true
+    },
+    {
+      "type": "highlight",
+      "title": "למה לבחור ביוסף שיפוצים?",
+      "text": "מקצוענים ואמינים: שקיפות מלאה, דיוק בזמנים, ותוצאות שמדברות בעד עצמן. ליווי אישי משלב התכנון ועד המסירה כדי להבטיח חוויה מצוינת ותוצאה מושלמת.",
+      "rtl": true
+    },
+    {
+      "type": "normal",
+      "title": "איכות ללא פשרות",
+      "text": "אנו מקפידים על חומרים איכותיים, כוח אדם מנוסה ופיקוח צמוד בכל שלבי העבודה — כדי שתיהנו משיפוץ נקי, מדויק ועמיד לאורך שנים.",
+      "rtl": true
+    }
+  ],
+  "gallery": {
+    "title": "הגלריה שלנו",
+    "subtitle": "תמונות מפרויקטים אמיתיים והמלצות לקוחות מרוצים",
+    "loadingText": "טוען תמונות..."
+  },
+  "cta": {
+    "title": "רוצים הצעת מחיר משתלמת?",
+    "subtitle": "דברו איתנו — מקצוענות, אמינות ושירות מצוין"
+  },
+  "footer": {
+    "links": [
+      { "icon": "fas fa-tools", "text": "שירותים", "href": "#services" },
+      { "icon": "fas fa-phone", "text": "התקשרו: 052-3987393", "href": "tel:+972523987393", "onclick": "trackPhoneClick('footer_phone_primary');" },
+      { "icon": "fas fa-phone", "text": "או: 054-6588102", "href": "tel:+972546588102", "onclick": "trackPhoneClick('footer_phone_secondary');" }
+    ],
+    "copyright": "MarKas 2025 כל הזכויות שמורות."
+  }
+}

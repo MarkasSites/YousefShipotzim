@@ -1,0 +1,457 @@
+{
+  "document": {
+    "type": "html",
+    "attributes": {
+      "lang": "he",
+      "dir": "rtl"
+    },
+    "head": {
+      "meta": [
+        {"charset": "UTF-8"},
+        {"name": "viewport", "content": "width=device-width, initial-scale=1.0"}
+      ],
+      "seo": {
+        "title": "{{site.title}}",
+        "description": "{{site.description}}",
+        "keywords": "{{site.keywords}}",
+        "author": "{{site.companyName}}",
+        "robots": "index, follow"
+      },
+      "openGraph": {
+        "title": "{{site.title}}",
+        "description": "{{site.description}}",
+        "image": "{{site.ogImage}}",
+        "url": "{{site.url}}",
+        "type": "website",
+        "locale": "he_IL"
+      },
+      "favicon": "{{site.favicon}}",
+      "stylesheets": [
+        {"href": "https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&display=swap", "preload": true},
+        {"href": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css", "preload": true},
+        {"href": "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"},
+        {"href": "styles.css"}
+      ],
+      "scripts": [
+        {"content": "window.siteAnalytics = {{site.analytics}};", "inline": true}
+      ]
+    },
+    "body": {
+      "sections": [
+        {
+          "type": "navigation",
+          "id": "main-navigation",
+          "cssClass": "navbar navbar-expand-lg navbar-light modern-navbar",
+          "container": true,
+          "sticky": true,
+          "config": {
+            "brand": {
+              "type": "link",
+              "cssClass": "navbar-brand",
+              "href": "#",
+              "content": "{{site.companyName}}",
+              "onClick": "gtag('event', 'click', {'event_category': 'navigation', 'event_label': 'logo'});"
+            },
+            "toggler": {
+              "type": "button",
+              "cssClass": "navbar-toggler",
+              "attributes": {
+                "data-toggle": "collapse",
+                "data-target": "#navbarNav",
+                "aria-controls": "navbarNav",
+                "aria-expanded": "false",
+                "aria-label": "Toggle navigation"
+              }
+            },
+            "menu": {
+              "type": "navMenu",
+              "cssClass": "navbar-nav ml-auto",
+              "containerId": "navbarNav",
+              "dataBinding": "navigation",
+              "itemTemplate": {
+                "type": "navItem",
+                "cssClass": "nav-item",
+                "link": {
+                  "type": "link",
+                  "cssClass": "nav-link {{#active}}active{{/active}}",
+                  "href": "{{href}}",
+                  "content": "{{text}}"
+                }
+              }
+            },
+            "logo": {
+              "type": "image",
+              "cssClass": "logo",
+              "src": "{{site.logo}}",
+              "alt": "{{site.companyName}} לוגו"
+            }
+          }
+        },
+        {
+          "type": "hero",
+          "id": "home",
+          "cssClass": "hero-section",
+          "container": true,
+          "config": {
+            "videoSource": "{{hero.videoSource}}",
+            "backgroundImage": "{{hero.backgroundImage}}",
+            "mobileImage": "{{hero.mobileImage}}",
+            "poster": "{{hero.poster}}",
+            "overlay": true,
+            "textAlign": "center",
+            "content": {
+              "title": {
+                "tag": "h1",
+                "cssClass": "hero-title",
+                "content": "{{hero.title}}",
+                "animation": "fadeInUp"
+              },
+              "subtitle": {
+                "tag": "p", 
+                "cssClass": "hero-subtitle",
+                "content": "{{hero.subtitle}}",
+                "animation": "fadeInUp",
+                "delay": "0.2s"
+              },
+              "cta": {
+                "type": "phoneButton",
+                "cssClass": "hero-phone",
+                "href": "tel:{{site.phoneInternational}}",
+                "onClick": "trackPhoneClick('hero_phone');",
+                "icon": "fas fa-phone",
+                "text": "{{site.phone}}",
+                "animation": "fadeInUp",
+                "delay": "0.4s"
+              }
+            }
+          }
+        },
+        {
+          "type": "services",
+          "id": "services",
+          "cssClass": "services-section",
+          "container": true,
+          "config": {
+            "title": {
+              "tag": "h2",
+              "cssClass": "services-title fade-in",
+              "content": "{{services.title}}"
+            },
+            "layout": "cardGrid",
+            "gridClass": "row",
+            "dataBinding": "services.items",
+            "itemTemplate": {
+              "type": "serviceCard",
+              "columnClass": "col-md-4 mb-4",
+              "cardClass": "service-card fade-in",
+              "fields": {
+                "icon": {
+                  "tag": "div",
+                  "cssClass": "service-icon",
+                  "content": "{{icon}}"
+                },
+                "title": {
+                  "tag": "h3", 
+                  "cssClass": "service-title",
+                  "content": "{{title}}"
+                },
+                "description": {
+                  "tag": "p",
+                  "cssClass": "service-description", 
+                  "content": "{{description}}"
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "serviceAreas",
+          "id": "service-areas", 
+          "cssClass": "services-section",
+          "style": "",
+          "container": true,
+          "config": {
+            "title": {
+              "tag": "h2",
+              "cssClass": "services-title fade-in",
+              "content": "{{serviceAreas.title}}"
+            },
+            "layout": "cardGrid",
+            "gridClass": "row justify-content-center",
+            "dataBinding": "serviceAreas.items",
+            "itemTemplate": {
+              "type": "areaCard", 
+              "columnClass": "col-lg-5 col-md-6 mb-4",
+              "cardClass": "service-card fade-in",
+              "fields": {
+                "icon": {
+                  "tag": "div",
+                  "cssClass": "service-icon",
+                  "content": "{{icon}}"
+                },
+                "title": {
+                  "tag": "h3",
+                  "cssClass": "service-title", 
+                  "content": "{{title}}"
+                },
+                "description": {
+                  "tag": "p",
+                  "cssClass": "service-description",
+                  "content": "{{description}}"
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "content",
+          "id": "main-content",
+          "cssClass": "container my-5",
+          "config": {
+            "layout": "dynamicSections",
+            "dataBinding": "content",
+            "sectionTemplate": {
+              "baseClass": "content-section fade-in",
+              "conditionalClass": "{{#highlight}}highlight{{/highlight}}",
+              "renderingRules": [
+                {
+                  "condition": "{{type}} === 'hours'",
+                  "template": {
+                    "type": "hoursSection",
+                    "structure": {
+                      "title": {
+                        "tag": "h2",
+                        "style": "color: #2c3e50; font-size: 1.8rem; margin-bottom: 20px;",
+                        "content": "{{title}}"
+                      },
+                      "hoursBox": {
+                        "tag": "div",
+                        "style": "background: #f8f9fa; padding: 20px; border-radius: 10px; text-align: center;",
+                        "children": {
+                          "mainText": {
+                            "tag": "p",
+                            "style": "font-size: 1.3rem; margin-bottom: 10px;",
+                            "content": "<strong>{{mainText}}</strong>"
+                          },
+                          "details": {
+                            "tag": "div",
+                            "style": "margin-top: 15px;",
+                            "dataBinding": "details",
+                            "itemTemplate": "<strong>{{label}}:</strong> {{value}}<br>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "condition": "{{type}} === 'highlight'",
+                  "template": {
+                    "type": "highlightSection",
+                    "structure": {
+                      "title": {
+                        "tag": "strong",
+                        "content": "{{title}}",
+                        "conditional": "{{title}}"
+                      },
+                      "text": {
+                        "tag": "p",
+                        "content": "{{text}}"
+                      }
+                    }
+                  }
+                },
+                {
+                  "condition": "default",
+                  "template": {
+                    "type": "textSection",
+                    "structure": {
+                      "title": {
+                        "tag": "h2",
+                        "style": "color: #2c3e50; font-size: 1.8rem; margin-bottom: 20px;",
+                        "content": "{{title}}",
+                        "conditional": "{{title}}"
+                      },
+                      "text": {
+                        "tag": "p",
+                        "content": "{{text}}"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "type": "gallery",
+          "id": "gallery",
+          "cssClass": "gallery-section",
+          "container": true,
+          "config": {
+            "title": {
+              "tag": "h2",
+              "cssClass": "section-title",
+              "content": "{{gallery.title}}"
+            },
+            "subtitle": {
+              "tag": "p",
+              "cssClass": "gallery-subtitle",
+              "content": "{{gallery.subtitle}}"
+            },
+            "container": {
+              "id": "imageGallery",
+              "cssClass": "gallery-grid fade-in",
+              "style": "display: grid; opacity: 1; transform: translateY(0px); transition: 0.6s;"
+            }
+          }
+        },
+        {
+          "type": "cta",
+          "id": "contact",
+          "cssClass": "cta-section",
+          "container": true,
+          "config": {
+            "title": {
+              "tag": "h2",
+              "cssClass": "cta-title",
+              "content": "{{cta.title}}"
+            },
+            "subtitle": {
+              "tag": "p",
+              "cssClass": "cta-subtitle",
+              "content": "{{cta.subtitle}}"
+            },
+            "phoneButton": {
+              "type": "phoneButton",
+              "cssClass": "cta-phone",
+              "href": "tel:{{site.phoneInternational}}",
+              "onClick": "trackPhoneClick('cta_phone');",
+              "icon": "fas fa-phone",
+              "text": "{{site.phone}}"
+            }
+          }
+        },
+        {
+          "type": "footer",
+          "id": "main-footer",
+          "cssClass": "modern-footer",
+          "container": true,
+          "config": {
+            "layout": "linksAndCopyright",
+            "links": {
+              "cssClass": "footer-content",
+              "dataBinding": "footer.links",
+              "itemTemplate": {
+                "type": "footerLink",
+                "tag": "a",
+                "cssClass": "footer-link", 
+                "href": "{{href}}",
+                "onClick": "{{onclick}}",
+                "content": {
+                  "icon": {
+                    "tag": "i",
+                    "cssClass": "{{icon}}"
+                  },
+                  "text": {
+                    "content": " {{text}}"
+                  }
+                }
+              }
+            },
+            "copyright": {
+              "tag": "p",
+              "content": "{{footer.copyright}}"
+            }
+          }
+        },
+        {
+          "type": "lightbox",
+          "id": "lightbox",
+          "cssClass": "lightbox",
+          "style": "display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.8); justify-content: center; align-items: center;",
+          "config": {
+            "image": {
+              "id": "lightbox-img",
+              "tag": "img",
+              "style": "max-width: 90%; max-height: 90%; object-fit: contain;"
+            },
+            "closeButton": {
+              "cssClass": "lightbox-close",
+              "style": "position: absolute; top: 20px; right: 30px; color: white; font-size: 40px; cursor: pointer;",
+              "content": "×"
+            }
+          }
+        }
+      ],
+      "scripts": [
+        {"src": "https://code.jquery.com/jquery-3.3.1.slim.min.js"},
+        {"src": "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"},
+        {"src": "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"},
+        {"src": "analytics.js"},
+        {"src": "getImages.js"}
+      ]
+    }
+  },
+  "renderingRules": {
+    "containerWrapper": {
+      "enabled": true,
+      "cssClass": "container"
+    },
+    "responsiveGrid": {
+      "enabled": true,
+      "framework": "bootstrap4"
+    },
+    "dataBinding": {
+      "syntax": "mustache",
+      "fallbackBehavior": "hide"
+    },
+    "seoOptimization": {
+      "enabled": true,
+      "structuredData": true,
+      "metaTags": true
+    },
+    "animations": {
+      "enabled": true,
+      "defaultDuration": "0.8s",
+      "defaultEasing": "ease-out"
+    }
+  },
+  "sectionTypes": {
+    "navigation": {
+      "description": "Main site navigation with brand, menu, and logo",
+      "requiredData": ["navigation", "site.companyName"],
+      "features": ["responsive", "sticky", "analytics"]
+    },
+    "hero": {
+      "description": "Hero section with title, subtitle, and CTA",
+      "requiredData": ["hero.title", "hero.subtitle", "site.phone"],
+      "features": ["backgroundImage", "animations", "phoneTracking"]
+    },
+    "services": {
+      "description": "Services showcase with cards grid",
+      "requiredData": ["services.title", "services.items"],
+      "features": ["cardGrid", "animations", "responsive"]
+    },
+    "serviceAreas": {
+      "description": "Service areas with location-based cards",
+      "requiredData": ["serviceAreas.title", "serviceAreas.items"],
+      "features": ["cardGrid", "customBackground", "responsive"]
+    },
+    "content": {
+      "description": "Dynamic content sections with multiple layouts",
+      "requiredData": ["content"],
+      "features": ["conditionalRendering", "multipleLayouts", "animations"]
+    },
+    "cta": {
+      "description": "Call-to-action section with contact info",
+      "requiredData": ["cta.title", "cta.subtitle", "site.phone"],
+      "features": ["phoneTracking", "prominentDesign"]
+    },
+    "footer": {
+      "description": "Site footer with links and copyright",
+      "requiredData": ["footer.links", "footer.copyright"],
+      "features": ["linkGeneration", "socialMedia", "responsive"]
+    }
+  }
+}
