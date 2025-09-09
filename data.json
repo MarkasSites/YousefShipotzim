@@ -2,8 +2,8 @@
   "site": {
     "title": "יוסף שיפוצים - עבודות בחיפה, הקריות ואזור הצפון",
     "description": "יוסף שיפוצים — שיפוצים כלליים, אינסטלציה ואיטום, ועבודות גמר. צוות מקצועי ואמין, שירות מהיר והוגן בכל אזור הצפון.",
-    "phone": "052-3987393",
-    "phoneInternational": "+972523987393",
+    "phone": "052-3987494",
+    "phoneInternational": "+972523987494",
     "secondaryPhone": "054-6588102",
     "secondaryPhoneInternational": "+972546588102",
     "companyName": "יוסף שיפוצים",
@@ -124,7 +124,7 @@
   "footer": {
     "links": [
       { "icon": "fas fa-tools", "text": "שירותים", "href": "#services" },
-      { "icon": "fas fa-phone", "text": "התקשרו: 052-3987393", "href": "tel:+972523987393", "onclick": "trackPhoneClick('footer_phone_primary');" },
+      { "icon": "fas fa-phone", "text": "התקשרו: 052-3987494", "href": "tel:+972523987494", "onclick": "trackPhoneClick('footer_phone_primary');" },
       { "icon": "fas fa-phone", "text": "או: 054-6588102", "href": "tel:+972546588102", "onclick": "trackPhoneClick('footer_phone_secondary');" }
     ],
     "copyright": "MarKas 2025 כל הזכויות שמורות."
