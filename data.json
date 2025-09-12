@@ -27,8 +27,8 @@
   },
   "navigation": [
     { "text": "בית", "href": "#home", "active": true },
-    { "text": "שירותים", "href": "#services", "active": false },
     { "text": "גלריה", "href": "#gallery", "active": false },
+    { "text": "שירותים", "href": "#services", "active": false },
     { "text": "צור קשר", "href": "#contact", "active": false }
   ],
   "hero": {
@@ -38,6 +38,11 @@
     "mobileImage": "header.jpeg",
     "videoSource": "header.mp4",
     "poster": "header.jpeg"
+  },
+    "gallery": {
+    "title": "הגלריה שלנו",
+    "subtitle": "תמונות מפרויקטים",
+    "loadingText": "טוען תמונות..."
   },
   "services": {
     "title": "השירותים שלנו",
@@ -113,11 +118,6 @@
       "rtl": true
     }
   ],
-  "gallery": {
-    "title": "הגלריה שלנו",
-    "subtitle": "תמונות מפרויקטים אמיתיים והמלצות לקוחות מרוצים",
-    "loadingText": "טוען תמונות..."
-  },
   "cta": {
     "title": "רוצים הצעת מחיר משתלמת?",
     "subtitle": "דברו איתנו — מקצוענות, אמינות ושירות מצוין"
