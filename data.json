@@ -28,6 +28,7 @@
   "navigation": [
     { "text": "בית", "href": "#home", "active": true },
     { "text": "שירותים", "href": "#services", "active": false },
+    { "text": "גלריה", "href": "#gallery", "active": false },
     { "text": "צור קשר", "href": "#contact", "active": false }
   ],
   "hero": {
